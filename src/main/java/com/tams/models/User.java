@@ -66,14 +66,16 @@ public class User {
 	
 	}
 
-	public User(String username, String email, String password) {
+	public Long getId() {
+		return id;
+	}
+
+	public User(String username, String email, String password, Date created_date, Date updated_date) {
 		this.username = username;
 		this.email = email;
 		this.password = password;
-	}
-
-	public Long getId() {
-		return id;
+		this.created_date = created_date;
+		this.updated_date = updated_date;
 	}
 
 	public void setId(Long id) {
